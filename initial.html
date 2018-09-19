@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input[disabled]{
+            cursor: no-drop;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div onselect="alert(1)">lorem</div>
+    <form name="searchForm" action="test" method="GET"
+    onsubmit="loginForm (this)" target="_self">
+    <fieldset>
+        <legend onselect="alert(2)">用户注册</legend>
+        <input type="text" name="name" maxlength="4" autofocus autocomplete="off" list="initialName" pattern="(1)[0-9]{10}" readonly value="12345678909">
+        <datalist id="initialName">
+            <option label="空" value="123"></option>
+        </datalist>
+        <input type="search" required maxlength="6">
+        <input type="number" name="number" min="2" max="5" step="2">
+        <input type="password" name="psd">
+        <input type="radio" name="age" value="1" checked>
+        <input type="radio" name="age" value="2">
+        <input type="checkbox" name="like" value="9" checked>
+        <input type="checkbox" name="like" value="8" disabled>
+        <input type="checkbox" name="like" value="7">
+        <input type="checkbox" name="like" value="6">
+        <input type="file" name="img" multiple="multiple" />
+        <input type="submit" value="submit提交">
+        <input type="datetime-local">
+        <input type="date">
+        <input type="time">
+        <input type="email">
+        <input type="month">
+        <input type="range">
+    </fieldset>
+    </form>
+</body>
+<script>
+    window.onload=function(){
+        function loginForm (form){
+            document.searchForm.submit();
+        }
+    }
+</script>
+</html>
