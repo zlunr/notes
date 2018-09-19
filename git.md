@@ -11,6 +11,9 @@ $ git config --global user.email "email@example.com"
 ```
 $ git remote add origin https://github.com/zlunr/note.git  **绑定提交地址**
 $ git push -u origin master **使用绑定的远程地址提交**
+```
+由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+```
 $ mkdir my-dir-name **创建my-dir-name文件夹**
 $ cd my-dir-name    **进入my-dir-name文件夹**
 $ pwd       **显示完整路径**
