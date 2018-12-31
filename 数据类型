@@ -1,0 +1,4 @@
+Object.prototype.toString.apply（数据）
+typeof 数据
+数据 instanceof [array || Object || ...]
+
