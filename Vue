@@ -1,0 +1,17 @@
+生命周期：
+创建之前
+beforeCreate
+创建完成
+created
+挂载之前
+beforeMount
+挂载完成
+mounted
+更新之前
+beforeUpdate
+更新完成
+updated
+销毁之前
+beforeDestroy
+销毁完成
+destroyed
